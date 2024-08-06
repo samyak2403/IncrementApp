@@ -4,6 +4,9 @@
 
 IncrementApp is a simple Android application designed to demonstrate basic user interactions. The app displays a number on the screen and provides two buttons to increment or decrement that number.
 
+
+![Screenshot (5)](https://github.com/user-attachments/assets/73e7d170-2013-40f7-8f4d-7f4cd836a3df)
+
 ## Features
 
 - **Increment Button**: Increases the displayed number by 1.
