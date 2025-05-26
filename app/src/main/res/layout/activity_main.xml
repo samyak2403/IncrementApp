@@ -1,43 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="@drawable/main_background"
+    android:padding="24dp">
 
-    <!-- TextView to display the number -->
     <TextView
-        android:id="@+id/numberTextView"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:text="0"/>
+        android:layout_marginTop="32dp"
+        android:text="Counter App"
+        android:textColor="@color/textPrimary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Card for the counter display -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/counterCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="48dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Count"
+                android:textColor="@color/textSecondary"
+                android:textSize="18sp" />
+
+            <!-- Calculator-style display for the number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/calculator_display_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- TextView to display the number -->
+                <TextView
+                    android:id="@+id/numberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text="0"
+                    android:textColor="@color/calculatorDisplayText"
+                    android:textSize="48sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <!-- LinearLayout for buttons -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/numberTextView"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
-
-        <!-- Increment Button -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/incrementButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Increment"
-            android:background="@drawable/button_background"
-            android:layout_marginRight="8dp"/>
+        android:layout_below="@id/counterCard"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <!-- Decrement Button -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/decrementButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_ripple"
             android:text="Decrement"
-            android:background="@drawable/button_background"/>
+            android:textColor="@color/buttonText"
+            android:textSize="16sp" />
+
+        <!-- Increment Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/incrementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_ripple"
+            android:text="Increment"
+            android:textColor="@color/buttonText"
+            android:textSize="16sp" />
     </LinearLayout>
 </RelativeLayout>

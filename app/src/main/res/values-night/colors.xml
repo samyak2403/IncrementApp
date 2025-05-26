@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary color palette -->
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryDark">#6200EA</color>
+    <color name="colorAccent">#03DAC5</color>
+    
+    <!-- Button colors -->
+    <color name="buttonBackground">#BB86FC</color>
+    <color name="buttonPressed">#6200EA</color>
+    <color name="buttonText">#000000</color>
+    
+    <!-- Text colors -->
+    <color name="textPrimary">#E0E0E0</color>
+    <color name="textSecondary">#B0B0B0</color>
+    
+    <!-- Background colors -->
+    <color name="backgroundMain">#121212</color>
+    <color name="cardBackground">#1E1E1E</color>
+    
+    <!-- Calculator display colors -->
+    <color name="calculatorDisplayBackground">#263238</color>
+    <color name="calculatorDisplayText">#80DEEA</color>
+    <color name="calculatorDisplayBorder">#37474F</color>
+</resources> 
