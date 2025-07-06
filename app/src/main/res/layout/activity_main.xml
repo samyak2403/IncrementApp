@@ -67,6 +67,7 @@
 
     <!-- LinearLayout for buttons -->
     <LinearLayout
+        android:id="@+id/buttonsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/counterCard"
@@ -95,4 +96,13 @@
             android:textColor="@color/buttonText"
             android:textSize="16sp" />
     </LinearLayout>
+    
+    <!-- Container for banner ads -->
+    <RelativeLayout
+        android:id="@+id/bannerAdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </RelativeLayout>
 </RelativeLayout>

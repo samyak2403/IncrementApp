@@ -35,6 +35,10 @@ dependencies {
     implementation libs.activity
     implementation libs.constraintlayout
     implementation 'androidx.cardview:cardview:1.0.0'
+    
+    // Start.io SDK
+    implementation 'com.startapp:inapp-sdk:4.10.+'
+    
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
